@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        .nav{
+            height:100px;
+            background-image: linear-gradient( to right,rgb(104, 104, 222),violet);
+            margin:10px;
+            
+            }
+
+        table,td,th,tr{
+        border :2px solid;
+        border-collapse:collapse;
+        }
+        #qua{
+            padding: 10px;
+            margin-left: 20%;
+            margin-right: 30%; 
+            
+            background-color: rgb(190, 146, 231); 
+            color: rgb(56, 4, 84);
+        }
+
+        .img1:hover + .input1{
+            width:70%;
+            background-color: rgb(8, 232, 8);
+            animation-name: sep ;
+             animation-duration: 4s;
+             animation-iteration-count: 10;
+        
+
+        }
+
+        .img2:hover + .input2{
+            width:70%;
+            background-color: rgb(32, 18, 228);
+             animation-name: sep ;
+             animation-duration: 4s;
+             animation-iteration-count: 10; 
+    
+        }
+        
+        
+        .img3:hover ~ .input3{
+            width:80%;
+            background-color: rgb(240, 10, 190);
+            animation-name: sep ;
+             animation-duration: 4s;
+             animation-iteration-count: 10;
+
+        }
+
+        @keyframes sep{
+            0%{width: 0%;}
+            100%{width:80%}
+        }
+        
+
+        
+    </style>
+
+
+</head>
+<body>
+    <nav class="nav">
+        <img src="photo_sowmya.jpg" width="80px" height="80px" style="border-radius:50%;margin-left:30px;margin-top: 4px;">
+       <span style="margin-left: 40%;">
+        <a href="#profile" style="background-color: rgb(169, 169, 240); margin: 10px;padding:10px;">Profile</a>
+        <a href="#qua" style="background-color: rgb(159, 159, 235); margin: 10px;padding:10px;">Qualication</a>
+        <a href="#project" style="background-color: rgb(181, 181, 241); margin: 10px;padding:10px;">My projects</a>
+        <a href="#ts" style="background-color: rgb(174, 174, 233); margin: 10px;padding:10px;">Skills</a>
+        <a href="#hobbies" style="background-color: rgb(181, 181, 242); margin: 10px;padding:10px;">Hobbies</a>
+       </span>
+    </nav>
+<br><br>
+
+    <marquee id="Profile" style="width: 100%;background-color: antiquewhite;">Name:Chithanuri Sowmya<br>Email:sowmyagupta2000@gmail.com<br>Mobile no:8096474350</marquee>
+    
+  <h1>Qualification :</h1>
+     <div id="qua">
+       <table  style="background-color: rgb(235, 108, 235);width:100%;">
+        
+        <tr style="height: 60px;">
+            <th style="width:10%">SNO</th>
+            <th style="width:30%">    Qualification</th>
+            <th  style="width:40%">INSTITUTE</th>
+            <th  style="width:10%"> YOP</th>
+            <th style="width:10%">  Percentage</th>
+        </tr>
+    
+        <tr style="height: 60px;">
+            <td>1</td>
+             <td> BTECH</td>
+             <td>CMR INSTITUTE of technology</td>
+             <td> 2022</td> 
+             <td> 87</td>
+        </tr>
+    
+        <tr style="height: 60px;">
+            <td>2</td>
+            <td>inter</td>
+            <td>narayana junior college</td>
+            
+            <td>2018</td>
+            <td>95</td>
+        </tr>
+
+        <tr style="height: 60px;">
+            <td>3</td>
+            <td>SSC</td>
+            <td>Siddhartha high school</td>
+            <td>2016</td>
+            <td>93</td>
+        </tr>
+        
+       </table>
+    </div>  
+<h1>My Projects :</h1>
+
+<ol  id="project" style="color: blue;font-size: larger;">
+    <li><a href="https://wondrous-crumble-df312e.netlify.app/" style="text-decoration: none;">Restaurant page</a></li>
+    <li><a href="https://threetemplate.netlify.app/"style="text-decoration: none;">Template_3</a></li>
+    <li><a href="https://stellar-youtiao-16f181.netlify.app/" style="text-decoration: none;">Resume</a></li>
+    <li><a href="https://relaxed-bublanina-48d343.netlify.app/" style="text-decoration: none;">MC Donales_app</a></li>
+    <li><a href="https://sowmyatemplate1.netlify.app/" style="text-decoration: none;">template_1</a></li>
+    <li><a href="https://advancecss.netlify.app/" style="text-decoration: none;">Advance css topics</a></li>
+    <li><a href="https://threetemplate.netlify.app/" style="text-decoration: none;">template_4</a></li>
+    
+</ol>
+
+<h1>Technical Skills :</h1>
+
+<div id="ts" style="margin-left: 20%;">
+    <img src="./HTML_ICON.jpg" class="img1" width="100px" height="100px">  &nbsp;&nbsp; 
+    <input type="text"  class="input1" style="border-radius:30px;">
+    95%
+<br>
+<br>
+<br>
+
+<img src="./css_icon.jpg" class="img2" width="100px" height="100px">  &nbsp;&nbsp; 
+
+<input type="text"  class="input2" style="border-radius:30px;">
+90%
+
+<br>
+<br>
+<br>
+
+<img src="./js_icon.jpg" class="img3" width="100px" height="100px">  &nbsp;&nbsp; 
+
+<input type="text"   class="input3" style="border-radius:30px;"> 80%
+
+
+
+</div>
+
+<h1>Hobbies </h1>
+
+      <div id="hobbies">
+        <li>Dancing</li>
+        <li>Playing Games</li>
+        <li>Watching Movies</li>
+        <li>Browsing Internet</li>
+      </div>
+
+</body>
+</html>
